@@ -1,16 +1,19 @@
 <mat-toolbar class="mat-elevation-z2" color="primary"></mat-toolbar>
 
-<mat-sidenav-container>
+<!--
+Removing mat-sidenav-container (and mat-sidenav) will 'fix' the not working fixed table header
+-->
 
+<mat-sidenav-container>
   <mat-sidenav #sidenav
                class="mat-elevation-z1"
                [mode]="'side'"
                [opened]="true"
                [autoFocus]="false">
   </mat-sidenav>
-
-  <mat-sidenav-content>
-    <app-list></app-list>
+  <mat-sidenav-content class="top-space">
+    <!--<div class="top-space">-->
+      <app-list></app-list>
+    <!--</div>-->
   </mat-sidenav-content>
-
 </mat-sidenav-container>
