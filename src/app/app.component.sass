@@ -1,0 +1,45 @@
+$space: 4px
+
+.wrapper
+  display: inline
+  position: relative
+  z-index: 10
+  top: 0
+  left: 0
+
+.table
+  display: table
+
+  .table-row
+    display: table-row
+
+  .table-header
+    display: table-header-group
+
+    .table-cell
+      font-size: 1.2em
+      font-weight: 700
+      background-color: black
+      color: white
+      position: sticky
+      top: 0
+
+  .table-body
+    display: table-row-group
+
+    .table-row
+      &:nth-child(even)
+        .table-cell
+          background-color: aliceblue
+
+      &:nth-child(odd)
+        .table-cell
+          background-color: beige
+
+  .table-footer
+    display: table-footer-group
+
+  .table-cell
+    display: table-cell
+    border: 1px solid black
+    padding: $space

@@ -1,0 +1,16 @@
+<mat-toolbar class="mat-elevation-z2" color="primary"></mat-toolbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav #sidenav
+               class="mat-elevation-z1"
+               [mode]="'side'"
+               [opened]="true"
+               [autoFocus]="false">
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-list></app-list>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

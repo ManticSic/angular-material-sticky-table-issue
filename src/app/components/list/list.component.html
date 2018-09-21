@@ -1,0 +1,15 @@
+<app-table>
+  <app-table-header>
+    <app-table-row>
+      <app-table-cell>#</app-table-cell>
+      <app-table-cell>Value</app-table-cell>
+    </app-table-row>
+  </app-table-header>
+
+  <app-table-body>
+    <app-table-row *ngFor="let item of content">
+      <app-table-cell>{{item[0]}}</app-table-cell>
+      <app-table-cell>{{item[1]}}</app-table-cell>
+    </app-table-row>
+  </app-table-body>
+</app-table>
