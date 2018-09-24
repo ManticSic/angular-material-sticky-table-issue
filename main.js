@@ -41,7 +41,7 @@ module.exports = "<app-protected></app-protected>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\n  display: inline;\n  position: relative;\n  z-index: 10;\n  top: 0;\n  left: 0; }\n\n.table {\n  display: table; }\n\n.table .table-row {\n    display: table-row; }\n\n.table .table-header {\n    display: table-header-group; }\n\n.table .table-header .table-cell {\n      font-size: 1.2em;\n      font-weight: 700;\n      background-color: black;\n      color: white;\n      position: -webkit-sticky;\n      position: sticky;\n      top: 0; }\n\n.table .table-body {\n    display: table-row-group; }\n\n.table .table-body .table-row:nth-child(even) .table-cell {\n      background-color: aliceblue; }\n\n.table .table-body .table-row:nth-child(odd) .table-cell {\n      background-color: beige; }\n\n.table .table-footer {\n    display: table-footer-group; }\n\n.table .table-cell {\n    display: table-cell;\n    border: 1px solid black;\n    padding: 4px; }\n"
+module.exports = ""
 
 /***/ }),
 
@@ -155,17 +155,6 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/list/list.component.css":
-/*!****************************************************!*\
-  !*** ./src/app/components/list/list.component.css ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/components/list/list.component.html":
 /*!*****************************************************!*\
   !*** ./src/app/components/list/list.component.html ***!
@@ -174,6 +163,17 @@ module.exports = ""
 /***/ (function(module, exports) {
 
 module.exports = "<app-table>\n  <app-table-header>\n    <app-table-row>\n      <app-table-cell>#</app-table-cell>\n      <app-table-cell>Value</app-table-cell>\n    </app-table-row>\n  </app-table-header>\n\n  <app-table-body>\n    <app-table-row *ngFor=\"let item of content\">\n      <app-table-cell>{{item[0]}}</app-table-cell>\n      <app-table-cell>{{item[1]}}</app-table-cell>\n    </app-table-row>\n  </app-table-body>\n</app-table>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/list/list.component.sass":
+/*!*****************************************************!*\
+  !*** ./src/app/components/list/list.component.sass ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -225,7 +225,7 @@ var ListComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-list',
             template: __webpack_require__(/*! ./list.component.html */ "./src/app/components/list/list.component.html"),
-            styles: [__webpack_require__(/*! ./list.component.css */ "./src/app/components/list/list.component.css")]
+            styles: [__webpack_require__(/*! ./list.component.sass */ "./src/app/components/list/list.component.sass")]
         })
     ], ListComponent);
     return ListComponent;
@@ -253,7 +253,7 @@ module.exports = "<mat-toolbar class=\"mat-elevation-z2\" color=\"primary\"></ma
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-toolbar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100; }\n\nmat-sidenav {\n  width: 250px;\n  height: calc(100vh - 64px);\n  position: fixed;\n  top: 64px; }\n\n.top-space {\n  margin-top: 128px;\n  padding: 16px; }\n"
+module.exports = "mat-toolbar {\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 100; }\n\nmat-sidenav {\n  width: 250px;\n  height: calc(100vh - 64px);\n  position: fixed;\n  top: 64px; }\n\n.top-space {\n  margin-top: 128px;\n  padding: 16px; }\n\nmat-sidenav-container, mat-sidenav-content {\n  overflow: initial; }\n"
 
 /***/ }),
 
@@ -298,17 +298,6 @@ var NavigationComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/protected/protected.component.css":
-/*!**************************************************************!*\
-  !*** ./src/app/components/protected/protected.component.css ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/components/protected/protected.component.html":
 /*!***************************************************************!*\
   !*** ./src/app/components/protected/protected.component.html ***!
@@ -317,6 +306,17 @@ module.exports = ""
 /***/ (function(module, exports) {
 
 module.exports = "<app-navigation></app-navigation>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/protected/protected.component.sass":
+/*!***************************************************************!*\
+  !*** ./src/app/components/protected/protected.component.sass ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
 
 /***/ }),
 
@@ -350,7 +350,7 @@ var ProtectedComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-protected',
             template: __webpack_require__(/*! ./protected.component.html */ "./src/app/components/protected/protected.component.html"),
-            styles: [__webpack_require__(/*! ./protected.component.css */ "./src/app/components/protected/protected.component.css")]
+            styles: [__webpack_require__(/*! ./protected.component.sass */ "./src/app/components/protected/protected.component.sass")]
         }),
         __metadata("design:paramtypes", [])
     ], ProtectedComponent);
