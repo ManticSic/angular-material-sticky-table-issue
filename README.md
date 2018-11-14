@@ -25,3 +25,6 @@ When using `mat-sidenav-container` `position: sticky` behave like a regular `pos
 
 ## Reproduce
 Start the development server, open `http://localhost:5000/` in your browser and see what happens with our sticky header.
+
+## Solution
+https://stackoverflow.com/questions/52441095/sticky-table-header-doesnt-work-in-angular-materials-mat-sidenav-container/52474361#52474361
